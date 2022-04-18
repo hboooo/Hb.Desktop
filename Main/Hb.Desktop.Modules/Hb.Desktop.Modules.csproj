@@ -51,6 +51,11 @@
       <DependentUpon>HomeView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Home\HomeViewModel.cs" />
+    <Compile Include="Ink\InkModule.cs" />
+    <Compile Include="Ink\InkView.xaml.cs">
+      <DependentUpon>InkView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Ink\InkViewModel.cs" />
     <Compile Include="ModuleBase.cs" />
     <Compile Include="Option\OptionModule.cs" />
     <Compile Include="Option\OptionView.xaml.cs">
@@ -64,6 +69,10 @@
   </ItemGroup>
   <ItemGroup>
     <Page Include="Home\HomeView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Ink\InkView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Media.Animation;
 
-namespace Hb.Presentation.Animations
+namespace Hb.UI.Windows.Animations
 {
     /// <summary>
     /// author     :habo

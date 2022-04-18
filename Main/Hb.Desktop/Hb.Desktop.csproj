@@ -35,9 +35,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FirstFloor.ModernUI, Version=1.0.9.0, Culture=neutral, PublicKeyToken=bc9b0c37bf06c6a9, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\ModernUI.WPF.1.0.9\lib\net45\FirstFloor.ModernUI.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Data" />
@@ -100,7 +97,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -114,9 +110,9 @@
       <Project>{DC7B0179-901A-442E-A282-05BFD8EC0F8D}</Project>
       <Name>Hb.Addins</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Hb.Presentation\Hb.Presentation.csproj">
-      <Project>{3cfc114b-7074-4176-a7e5-a970638155b5}</Project>
-      <Name>Hb.Presentation</Name>
+    <ProjectReference Include="..\..\UI\Hb.UI\Hb.UI.csproj">
+      <Project>{08DFBA70-A3D3-41CB-B3EF-8877BFDDEFF4}</Project>
+      <Name>Hb.UI</Name>
     </ProjectReference>
     <ProjectReference Include="..\Hb\Hb.csproj">
       <Project>{bc66b4f0-98c6-4308-9290-207f3fe0652b}</Project>

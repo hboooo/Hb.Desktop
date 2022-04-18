@@ -35,7 +35,8 @@ namespace Hb.Desktop
             var moduleParts = DesktopMain.MainApp.AppStartup.ImportModules.Parts;
             if (moduleParts != null && moduleParts.Items != null && moduleParts.Items.Count() > 0)
             {
-                foreach (var item in moduleParts.Items)
+                var sorted = moduleParts.Items.OrderBy(m => m.Metadata.Index);
+                foreach (var item in sorted)
                 {
                     Logger.DebugFormatted("Modules initialized, {0}", item.Metadata.Name);
                     tabControl.Items.Add(new TabItem() { Header = item.Metadata.Name, Content = item.Value.CreateView() });
@@ -45,7 +46,8 @@ namespace Hb.Desktop
             var addinParts = DesktopMain.MainApp.AppStartup.ImportAddins.Parts;
             if (addinParts != null && addinParts.Items != null && addinParts.Items.Count() > 0)
             {
-                foreach (var item in addinParts.Items)
+                var sorted = addinParts.Items.OrderBy(m => m.Metadata.Index);
+                foreach (var item in sorted)
                 {
 
                     Logger.DebugFormatted("Plugins initialized, {0}", item.Metadata.Name);

@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>4274d6af-c96a-4437-82d5-7cefc23be6b1</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Assets\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Presentation\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Properties\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Themes\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Windows\Media\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Desk.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ProcessDpiAwareness.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UIHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Win32\MonitorDpiType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Win32\NativeMethods.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Win32\OSVersionHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Win32\RECT.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Windows\Animations\GridLengthAnimation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Windows\Controls\BaseWindow.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Windows\Controls\DpiAwareWindow.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Windows\Controls\DpiInformation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Windows\Converters\BooleanToFontWeightConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Windows\Converters\BooleanToVisibilityConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Windows\Converters\NullOrEmptyStringToVisibilityConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Windows\Converters\NullToVisibilityConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Windows\Converters\ToLowerConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Windows\Converters\ToUpperConverter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="$(MSBuildThisFileDirectory)Assets\Converters.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Assets\UI.Light.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Assets\UI.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Assets\TabItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Assets\TextBlock.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+</Project>

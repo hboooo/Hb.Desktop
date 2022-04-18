@@ -39,8 +39,8 @@ namespace Hb.Desktop
         {
             try
             {
-                Application.Current.Resources.MergedDictionaries.Add((ResourceDictionary)(Application.LoadComponent(new Uri("/FirstFloor.ModernUI;component/Assets/ModernUI.xaml", UriKind.RelativeOrAbsolute))));
-                Application.Current.Resources.MergedDictionaries.Add((ResourceDictionary)(Application.LoadComponent(new Uri("/FirstFloor.ModernUI;component/Assets/ModernUI.Light.xaml", UriKind.RelativeOrAbsolute))));
+                Application.Current.Resources.MergedDictionaries.Add((ResourceDictionary)(Application.LoadComponent(new Uri("/Hb.UI;component/Assets/UI.xaml", UriKind.RelativeOrAbsolute))));
+                Application.Current.Resources.MergedDictionaries.Add((ResourceDictionary)(Application.LoadComponent(new Uri("/Hb.UI;component/Assets/UI.Light.xaml", UriKind.RelativeOrAbsolute))));
             }
             catch (Exception ex)
             {

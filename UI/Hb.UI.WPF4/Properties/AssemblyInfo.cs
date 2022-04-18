@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // 有关程序集的一般信息由以下
 // 控制。更改这些特性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("Hb.Presentation")]
+[assembly: AssemblyTitle("Hb.UI.WPF4")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Hb.Presentation")]
+[assembly: AssemblyProduct("Hb.UI.WPF4")]
 [assembly: AssemblyCopyright("Copyright ©  2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // 如果此项目向 COM 公开，则下列 GUID 用于类型库的 ID
-[assembly: Guid("3cfc114b-7074-4176-a7e5-a970638155b5")]
+[assembly: Guid("a2682222-6a19-4d37-b135-74aead6690f4")]
 
 // 程序集的版本信息由下列四个值组成: 
 //
